@@ -19,13 +19,27 @@ apobj.add('ifttt://'+secrets['IFTT_key'])
 apobj.add('pover://'+secrets['Pushover_key'])
 
 # A sample Telegram notification - not working yet
-# apobj.add('apprise tgram:///secrets['Telegram_key']')
+#apobj.add('apprise tgram://'+secrets['Telegram_key']+'/')
 
 # A sample Microsoft Teams notification - seems to be broken
 # apobj.add('msteams://'+secrets['Teams_key'])
 
 # A sample Join notification
 apobj.add('join://'+secrets['Join_key'])
+
+# A simple Pushbulet notification
+apobj.add('pbul://'+secrets['Pushbullet_key'])
+
+# A simple Techulus Push notification
+apobj.add('push:///'+secrets['Techulus_key']+'/')
+
+# A simple Pushed notification
+apobj.add('pushed://'+secrets['Pushed_key'])
+
+# A simple PushSafer notification
+apobj.add('psafers://'+secrets['PushSafer_key'])
+
+
 
 # Then notify these services any time you desire. The below would
 # notify all of the services loaded into our Apprise object.
