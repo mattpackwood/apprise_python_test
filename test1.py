@@ -31,13 +31,13 @@ apobj.add('join://'+secrets['Join_key'])
 apobj.add('pbul://'+secrets['Pushbullet_key'])
 
 # A simple Techulus Push notification
-apobj.add('push:///'+secrets['Techulus_key']+'/')
+#apobj.add('push:///'+secrets['Techulus_key']+'/')
 
 # A simple Pushed notification
 apobj.add('pushed://'+secrets['Pushed_key'])
 
 # A simple PushSafer notification
-apobj.add('psafers://'+secrets['PushSafer_key'])
+#apobj.add('psafers://'+secrets['PushSafer_key'])
 
 
 
