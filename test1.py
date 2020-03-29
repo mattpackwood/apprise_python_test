@@ -39,7 +39,8 @@ apobj.add('pbul://'+secrets['Pushbullet_key'])
 # A simple PushSafer notification
 apobj.add('psafers://'+secrets['PushSafer_key'])
 
-
+# A simple Mac Desktop notification
+apobj.add('macosx://')
 
 # Then notify these services any time you desire. The below would
 # notify all of the services loaded into our Apprise object.
