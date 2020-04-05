@@ -31,16 +31,16 @@ apobj.add('join://'+secrets['Join_key'])
 apobj.add('pbul://'+secrets['Pushbullet_key'])
 
 # A simple Techulus Push notification
-# apobj.add('push:///'+secrets['Techulus_key']+'/')
+apobj.add('push:///'+secrets['Techulus_key']+'/')
 
 # A simple Pushed notification
-# working apobj.add('pushed://'+secrets['Pushed_key'])
+apobj.add('pushed://'+secrets['Pushed_key'])
 
 # A simple PushSafer notification
 apobj.add('psafers://'+secrets['PushSafer_key'])
 
 # A simple Mac Desktop notification
-apobj.add('macosx://')
+# apobj.add('macosx://')
 
 # Then notify these services any time you desire. The below would
 # notify all of the services loaded into our Apprise object.
