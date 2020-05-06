@@ -1,4 +1,4 @@
-# Test Code to excercise the Apprise Python Library
+# Test Code to excercise the Apprise Python Library from Chris Caron
 import apprise
 
 # Move keys to an external file
@@ -46,5 +46,5 @@ apobj.add('psafers://'+secrets['PushSafer_key'])
 # notify all of the services loaded into our Apprise object.
 apobj.notify(
     body='Body of notification, random text',
-    title='Test to IFTTT, Pushover Microsoft Teams and Join',
+    title='Test to Various Notification Services',
 )
