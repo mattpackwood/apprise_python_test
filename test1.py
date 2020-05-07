@@ -12,25 +12,25 @@ except ImportError:
 apobj = apprise.Apprise()
 
 # Add all of the notification services by their server url.
-# A sample IFTTT notification
-apobj.add('ifttt://'+secrets['IFTT_key'])
+# A sample IFTTT notification - This works fine, it uses IFTTT to trigger a Pushovver notification
+#apobj.add('ifttt://'+secrets['IFTT_key'])
 
-# A sample Pushover notification - NEED TO TEST MORE
+# A sample Pushover notification - This works fine, it send a message direct to Pushover
 #apobj.add('pover://'+secrets['Pushover_key'])
 
-# A sample Telegram notification - The issue is in creating a Telegram Bot that can receive the signal
+# A sample Telegram notification - Does not work, the issue is in creating a Telegram Bot that can receive the signal
 #apobj.add('apprise tgram://'+secrets['Telegram_key']+'/')
 
-# A sample Microsoft Teams notification - seems to be broken
-# apobj.add('msteams://'+secrets['Teams_key'])
+# A sample Microsoft Teams notification - This works fine, the notifications end up the "General" Channel
+#apobj.add('msteams://'+secrets['Teams_key'])
 
-# A sample Join notification - NEED TO TEST MORE
+# A sample Join notification - This works fine, I had the wrong key
 #apobj.add('join://'+secrets['Join_key'])
 
-# A simple Pushbulet notification - NEED TO TEST MORE
+# A simple Pushbulet notification - This works fine but it is Android ONLY
 #apobj.add('pbul://'+secrets['Pushbullet_key'])
 
-# A simple Techulus Push notification - Seem to get 3 messages
+# A simple Techulus Push notification - Works but I get 3 messages
 #apobj.add('push:///'+secrets['Techulus_key']+'/')
 
 # A simple Pushed notification - Working 100%
@@ -40,7 +40,7 @@ apobj.add('ifttt://'+secrets['IFTT_key'])
 #apobj.add('psafers://'+secrets['PushSafer_key'])
 
 # A simple Mac Desktop notification
-# apobj.add('macosx://')
+#apobj.add('macosx://')
 
 # Then notify these services any time you desire. The below would
 # notify all of the services loaded into our Apprise object.
