@@ -16,28 +16,28 @@ apobj = apprise.Apprise()
 apobj.add('ifttt://'+secrets['IFTT_key'])
 
 # A sample Pushover notification - NEED TO TEST MORE
-apobj.add('pover://'+secrets['Pushover_key'])
+#apobj.add('pover://'+secrets['Pushover_key'])
 
-# A sample Telegram notification - not working yet
+# A sample Telegram notification - The issue is in creating a Telegram Bot that can receive the signal
 #apobj.add('apprise tgram://'+secrets['Telegram_key']+'/')
 
 # A sample Microsoft Teams notification - seems to be broken
 # apobj.add('msteams://'+secrets['Teams_key'])
 
 # A sample Join notification - NEED TO TEST MORE
-apobj.add('join://'+secrets['Join_key'])
+#apobj.add('join://'+secrets['Join_key'])
 
 # A simple Pushbulet notification - NEED TO TEST MORE
-apobj.add('pbul://'+secrets['Pushbullet_key'])
+#apobj.add('pbul://'+secrets['Pushbullet_key'])
 
 # A simple Techulus Push notification - Seem to get 3 messages
-apobj.add('push:///'+secrets['Techulus_key']+'/')
+#apobj.add('push:///'+secrets['Techulus_key']+'/')
 
 # A simple Pushed notification - Working 100%
-apobj.add('pushed://'+secrets['Pushed_key'])
+#apobj.add('pushed://'+secrets['Pushed_key'])
 
 # A simple PushSafer notification - Working 100%
-apobj.add('psafers://'+secrets['PushSafer_key'])
+#apobj.add('psafers://'+secrets['PushSafer_key'])
 
 # A simple Mac Desktop notification
 # apobj.add('macosx://')
