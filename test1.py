@@ -18,7 +18,7 @@ apobj = apprise.Apprise()
 # A sample Pushover notification - Working 100%
 #apobj.add('pover://'+secrets['Pushover_key'])
 
-# A sample Telegram notification - Does not work, the issue is in creating a Telegram Bot that can receive the signal
+# A sample Telegram notification - Working 100%
 #apobj.add('apprise tgram://'+secrets['Telegram_key']+'/')
 
 # A sample Microsoft Teams notification  - Working 100% -> "General" Channel
@@ -39,11 +39,14 @@ apobj.add('pbul://'+secrets['Pushbullet_key'])
 # A simple PushSafer notification - Working 100%
 #apobj.add('psafers://'+secrets['PushSafer_key'])
 
-# A simple Mac Desktop notification - NOT WORKING
+# A simple Mac Desktop notification - Working 100%
 apobj.add('macosx://')
 
+# A simple Spontit notification - Working 100%
+#apobj.add('spontit://'+secrets['Spontit_key']+'/')
+
 # A simple LaMetric notification - TEST!!!!
-#apobj.add('apprise://'+secrets['LaMetric_key'])
+apobj.add('lametric://'+secrets['LaMetric_key'])
 
 
 # Then notify these services any time you desire. The below would
@@ -51,4 +54,5 @@ apobj.add('macosx://')
 apobj.notify(
     body='Body of notification, random text',
     title='Test to Various Notification Services',
+    
 )
