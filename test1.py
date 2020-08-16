@@ -1,4 +1,4 @@
-# Test Code to excercise the Apprise Python Library from Chris Caron
+# Test Code to excercise the Apprise Python Library from Chris Caron - MJP
 import apprise
 
 # Move keys to an external file
