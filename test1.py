@@ -40,13 +40,13 @@ apobj.add('pbul://'+secrets['Pushbullet_key'])
 #apobj.add('psafers://'+secrets['PushSafer_key'])
 
 # A simple Mac Desktop notification - Working 100%
-apobj.add('macosx://')
+#apobj.add('macosx://')
 
 # A simple Spontit notification - Working 100%
-#apobj.add('spontit://'+secrets['Spontit_key']+'/')
+apobj.add('spontit://'+secrets['Spontit_key']+'/')
 
 # A simple LaMetric notification - TEST!!!!
-apobj.add('lametric://'+secrets['LaMetric_key'])
+#apobj.add('lametric://'+secrets['LaMetric_key'])
 
 
 # Then notify these services any time you desire. The below would
