@@ -16,7 +16,7 @@ apobj = apprise.Apprise()
 #apobj.add('ifttt://'+secrets['IFTT_key'])
 
 # A sample Pushover notification - Working 100%
-#apobj.add('pover://'+secrets['Pushover_key'])
+apobj.add('pover://'+secrets['Pushover_key'])
 
 # A sample Telegram notification - Working 100%
 #apobj.add('apprise tgram://'+secrets['Telegram_key']+'/')
