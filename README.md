@@ -8,4 +8,5 @@ Many thanks to Chris Caron for this fantastic library!
 
 Adding some more services
 
+And an additional note
 
