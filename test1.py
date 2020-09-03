@@ -45,7 +45,7 @@ apobj.add('pbul://'+secrets['Pushbullet_key'])
 # A simple Spontit notification - Working 100%
 apobj.add('spontit://'+secrets['Spontit_key']+'/')
 
-# A simple LaMetric notification - TEST!!!!
+# A simple LaMetric notification - TEST THIS!
 #apobj.add('lametric://'+secrets['LaMetric_key'])
 
 
