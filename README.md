@@ -5,3 +5,8 @@ Link to library on Github: https://github.com/caronc/apprise
 Link to the library on PyPI: https://pypi.org/project/apprise/
 
 Many thanks to Chris Caron for this fantastic library!
+
+Adding some more services
+
+And an additional note
+
