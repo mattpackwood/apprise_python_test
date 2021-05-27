@@ -52,7 +52,16 @@ apobj = apprise.Apprise()
 apobj.add("notica://?" + secrets["Notify_key"])
 
 # A simple Popcornnotify notification - TEST THIS!
-apobj.add("popcorn:///" + secrets["Popcornnotify_key"] +"/12483462166")
+#apobj.add("popcorn:///" + secrets["Popcornnotify_key"] +"/12483462166")
+
+# A simple AWS SNS notification - Working 100%!
+#Xapobj.add("sns:///" + secrets["SNS_key"] +"/12483462166")
+
+# A simple Twist notification - Works but throws errors!
+#Xapobj.add("twist://" + secrets["Twist_key"])
+
+# A simple Twist notification - Works but throws errors!
+apobj.add("reddit://" + secrets["Reddit_key"])
 
 # Then notify these services any time you desire. The below would
 # notify all of the services loaded into our Apprise object.
