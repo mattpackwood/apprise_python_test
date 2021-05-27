@@ -13,16 +13,16 @@ apobj = apprise.Apprise()
 
 # Add all of the notification services by their server url.
 # A sample IFTTT notification  - Working 100%
-apobj.add('ifttt://'+secrets['IFTTT_key'])
+#Xapobj.add('ifttt://'+secrets['IFTTT_key'])
 
 # A sample Pushover notification - Working 100%
-apobj.add("pover://" + secrets["Pushover_key"])
+#Xapobj.add("pover://" + secrets["Pushover_key"])
 
 # A sample Telegram notification - Working 100%
-apobj.add("apprise tgram://" + secrets["Telegram_key"] + "/")
+#Xapobj.add("apprise tgram://" + secrets["Telegram_key"] + "/")
 
 # A sample Microsoft Teams notification  - Working 100% -> "General" Channel
-apobj.add("msteams://" + secrets["Teams_key"])
+#Xapobj.add("msteams://" + secrets["Teams_key"])
 
 # A sample Join notification  - I no longer use this tool, it needs Android
 #apobj.add("join://" + secrets["Join_key"])
@@ -31,23 +31,28 @@ apobj.add("msteams://" + secrets["Teams_key"])
 #apobj.add("pbul://" + secrets["Pushbullet_key"])
 
 # A simple Techulus Push notification - Works but I get 3 messages
-apobj.add("push:///" + secrets["Techulus_key"] + "/")
+#Xapobj.add("push:///" + secrets["Techulus_key"] + "/")
 
 # A simple Pushed notification - Working 100%
-apobj.add("pushed://" + secrets["Pushed_key"])
+#Xapobj.add("pushed://" + secrets["Pushed_key"])
 
 # A simple PushSafer notification - Working 100%
-#apobj.add("psafers://" + secrets["PushSafer_key"])
+#Xapobj.add("psafers://" + secrets["PushSafer_key"])
 
 # A simple Mac Desktop notification - Working 100%
-#apobj.add("macosx://")
+#Xapobj.add("macosx://")
 
 # A simple Spontit notification - Working 100%
-#apobj.add("spontit://" + secrets["Spontit_key"] + "/")
+#Xapobj.add("spontit://" + secrets["Spontit_key"] + "/")
 
-# A simple LaMetric notification - TEST THIS!
-#apobj.add("lametric://" + secrets["LaMetric_key"])
+# A simple LaMetric notification - Working 100%
+#Xapobj.add("lametric://" + secrets["LaMetric_key"])
 
+# A simple Notica notification - TEST THIS!
+apobj.add("notica://?" + secrets["Notify_key"])
+
+# A simple Popcornnotify notification - TEST THIS!
+apobj.add("popcorn:///" + secrets["Popcornnotify_key"] +"/12483462166")
 
 # Then notify these services any time you desire. The below would
 # notify all of the services loaded into our Apprise object.
