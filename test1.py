@@ -1,5 +1,5 @@
 # Test Code to exercise the Apprise Python Library from Chris Caron
-# # Using an Object
+# Using an Object
 
 import apprise
 
