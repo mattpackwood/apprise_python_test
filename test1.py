@@ -1,5 +1,5 @@
-# Test Code to exercise the Apprise Python Library from Chris Caron - 
-# Using an Object
+# Test Code to exercise the Apprise Python Library from Chris Caron
+# # Using an Object
 
 import apprise
 
@@ -42,16 +42,16 @@ apobj = apprise.Apprise()
 #Xapobj.add("psafers://" + secrets["PushSafer_key"])
 
 # A simple Mac Desktop notification - Working 100%
-#Xapobj.add("macosx://")
+apobj.add("macosx://")
 
 # A simple Spontit notification - Working 100%
 #Xapobj.add("spontit://" + secrets["Spontit_key"] + "/")
 
 # A simple LaMetric notification - Working 100%
-#Xapobj.add("lametric://" + secrets["LaMetric_key"])
+#apobj.add("lametric://" + secrets["LaMetric_key"])
 
 # A simple Notica notification - TEST THIS!
-apobj.add("notica://?" + secrets["Notify_key"])
+#apobj.add("notica://?" + secrets["Notify_key"])
 
 # A simple Popcornnotify notification - TEST THIS!
 #apobj.add("popcorn:///" + secrets["Popcornnotify_key"] +"/12483462166")
@@ -59,11 +59,11 @@ apobj.add("notica://?" + secrets["Notify_key"])
 # A simple AWS SNS notification - Working 100%!
 #Xapobj.add("sns:///" + secrets["SNS_key"] +"/12483462166")
 
-# A simple Twist notification - Works but throws errors!
-#Xapobj.add("twist://" + secrets["Twist_key"])
+# A simple Twist notification - Need to test more
+#apobj.add("twist://" + secrets["Twist_key"])
 
-# A simple Twist notification - Works but throws errors!
-apobj.add("reddit://" + secrets["Reddit_key"])
+# A simple Reddit notification - DOES NOT WORK!!!
+#apobj.add("reddit://" + secrets["Reddit_key"])
 
 # Then notify these services any time you desire. The below would
 # notify all of the services loaded into our Apprise object.
