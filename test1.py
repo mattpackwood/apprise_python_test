@@ -65,7 +65,10 @@ apobj = apprise.Apprise()
 # A simple Pushbulet notification  - I no longer use this tool, it needs Android
 #apobj.add("pbul://" + secrets["Pushbullet_key"])
 
-# Then notify these services any time you desire. The below would
+# A sample Join notification  - I no longer use this tool, it needs Android
+apobj.add("twilio://" + secrets["Twilio_Account_SID"] + secrets["Twilio_Auth_Token"] + "@12482189476/1243462166")
+
+# Then notify these services any timeyou desire. The below would
 # notify all of the services loaded into our Apprise object.
 apobj.notify(
     body="Body of notification, random text",
