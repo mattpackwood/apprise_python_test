@@ -45,7 +45,7 @@ apobj = apprise.Apprise()
 #X apobj.add("lametric://" + secrets["LaMetric_key"])
 
 # A simple Notica notification - Does not seem to work
-#apobj.add("notica://?" + secrets["Notify_key"])
+apobj.add("notica://" + secrets["Notify_key"])
 
 # A simple Popcornnotify notification - Works 100%
 #X apobj.add("popcorn:///" + secrets["Popcornnotify_key"] +"/12483462166")
