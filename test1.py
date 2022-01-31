@@ -57,7 +57,7 @@ apobj.add("macosx://")
 #X apobj.add("twist://" + secrets["Twist_key"])
 
 # A simple Reddit notification - DOES NOT WORK!!! Issue filed in GitHub
-#apobj.add("reddit://" + secrets["Reddit_key"])
+apobj.add("reddit://" + secrets["Reddit_key"])
 
 # A sample Join notification  - I no longer use this tool, it needs Android
 #apobj.add("join://" + secrets["Join_key"])
