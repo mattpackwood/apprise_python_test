@@ -68,8 +68,17 @@ apobj = apprise.Apprise()
 # A sample Twilil notification
 #apobj.add("twilio://" + secrets["Twilio_Account_SID"] + secrets["Twilio_Auth_Token"] + "@12482189476/1243462166")
 
-# A simple Discord notification
-apobj.add("discord://" + secrets["Discord_key"])
+# A simple Discord notification - Works 100%
+#X apobj.add("discord://" + secrets["Discord_key"])
+
+# A simple Webex notification - Works 100%
+#X apobj.add("wxteams:///" + secrets["WebEx_key"])
+
+# A simple Gitter notification - Works 100%
+#X apobj.add("gitter:///" + secrets["Gitter_key"])
+
+# A simple Flock notification - Works 100%
+apobj.add("flock:///" + secrets["Flock_key"])
 
 # Then notify these services any timeyou desire. The below would
 # notify all of the services loaded into our Apprise object.
