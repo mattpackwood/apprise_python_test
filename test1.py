@@ -56,8 +56,8 @@ apobj = apprise.Apprise()
 # A simple Twist notification - Works 100%
 #X apobj.add("twist://" + secrets["Twist_key"])
 
-# A simple Reddit notification - DOES NOT WORK!!! Issue filed in GitHub
-apobj.add("reddit://" + secrets["Reddit_key"])
+# A simple Reddit notification - Works 100%
+#x apobj.add("reddit://" + secrets["Reddit_key"])
 
 # A sample Join notification  - I no longer use this tool, it needs Android
 #apobj.add("join://" + secrets["Join_key"])
@@ -65,8 +65,11 @@ apobj.add("reddit://" + secrets["Reddit_key"])
 # A simple Pushbulet notification  - I no longer use this tool, it needs Android
 #apobj.add("pbul://" + secrets["Pushbullet_key"])
 
-# A sample Join notification  - I no longer use this tool, it needs Android
+# A sample Twilil notification
 #apobj.add("twilio://" + secrets["Twilio_Account_SID"] + secrets["Twilio_Auth_Token"] + "@12482189476/1243462166")
+
+# A simple Discord notification
+apobj.add("discord://" + secrets["Discord_key"])
 
 # Then notify these services any timeyou desire. The below would
 # notify all of the services loaded into our Apprise object.
