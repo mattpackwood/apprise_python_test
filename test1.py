@@ -80,6 +80,10 @@ apobj = apprise.Apprise()
 # A simple Flock notification - Works 100%
 apobj.add("flock:///" + secrets["Flock_key"])
 
+# A simple Prowl notification
+apobj.adu("prowl://" + secrets["Prowl_key])
+
+
 # Then notify these services any timeyou desire. The below would
 # notify all of the services loaded into our Apprise object.
 apobj.notify(
