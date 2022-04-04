@@ -78,11 +78,13 @@ apobj = apprise.Apprise()
 #X apobj.add("gitter:///" + secrets["Gitter_key"])
 
 # A simple Flock notification - Works 100%
-apobj.add("flock:///" + secrets["Flock_key"])
+#X apobj.add("flock:///" + secrets["Flock_key"])
 
-# A simple Prowl notification
-apobj.adu("prowl://" + secrets["Prowl_key])
+# A simple Prowl notification - Works 100%
+#X apobj.add("prowl://" + secrets["Prowl_key"])
 
+# A simple SendGrid notification - Works 100%
+apobj.add("sendgrid:///" + secrets["SendGrid_key"])
 
 # Then notify these services any timeyou desire. The below would
 # notify all of the services loaded into our Apprise object.
