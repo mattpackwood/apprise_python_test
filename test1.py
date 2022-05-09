@@ -36,7 +36,7 @@ apobj = apprise.Apprise()
 #X apobj.add("psafers://" + secrets["PushSafer_key"])
 
 # A simple Mac Desktop notification - Broken
-# apobj.add("macosx://")
+apobj.add("macosx://")
 
 # A simple Spontit notification - App broken??
 #Y apobj.add("spontit://" + secrets["Spontit_key"] + "/")
