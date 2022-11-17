@@ -3,7 +3,8 @@
 
 import apprise
 
-# Move keys to an external file
+# Keys are in an external file
+#from secrets import secrets
 try:
     from secrets import secrets
 except ImportError:
@@ -36,7 +37,7 @@ apobj = apprise.Apprise()
 #X apobj.add("psafers://" + secrets["PushSafer_key"])
 
 # A simple Mac Desktop notification - Broken
-apobj.add("macosx://")
+#apobj.add("macosx://")
 
 # A simple Spontit notification - App broken??
 #Y apobj.add("spontit://" + secrets["Spontit_key"] + "/")
@@ -84,7 +85,10 @@ apobj.add("macosx://")
 #X apobj.add("prowl://" + secrets["Prowl_key"])
 
 # A simple SendGrid notification - Works 100%
-apobj.add("sendgrid:///" + secrets["SendGrid_key"])
+#apobj.add("sendgrid:///" + secrets["SendGrid_key"])
+
+# A simple Mastadon notification - Testing
+apobj.add("mastadons://" + secrets["Mastodon_key"])
 
 # Then notify these services any timeyou desire. The below would
 # notify all of the services loaded into our Apprise object.
