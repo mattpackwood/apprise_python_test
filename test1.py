@@ -87,8 +87,11 @@ apobj.add("macosx://")
 # A simple SendGrid notification - Works 100%
 #apobj.add("sendgrid:///" + secrets["SendGrid_key"])
 
-# A simple Mastadon notification - Testing
-apobj.add("mastadons://" + secrets["Mastodon_key"])
+# A simple Mastadon notification - Does not work in the program but works on the CLI
+#apobj.add("mastadons://" + secrets["Mastodon_key"])
+
+# A simple SimplePush notification - Says is "Blocked in this system"
+#apobj.add("spush://" + secrets["SimplePush_key"])
 
 # Then notify these services any timeyou desire. The below would
 # notify all of the services loaded into our Apprise object.
